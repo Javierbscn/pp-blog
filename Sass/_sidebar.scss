@@ -1,0 +1,176 @@
+@import 'variables';
+// Sidebar
+#lateral{
+    width: 18.4em;
+    min-height: 1200px;
+    font-family: "TrebuchetMS";
+    float: right;
+    margin: 1.9em;
+    
+    h3:first-child{
+        margin-top: 0;
+    }
+    
+    #search {
+        width: 90%;
+        height: 30px;
+        margin: 10px auto;
+        background-color: $white;
+        border-radius: 5px;
+        border: 1px solid $gray3;
+        box-shadow: 1px 1px 4px $gray3 inset;
+    }
+    
+    input[type="text"]{
+        width: 85%;
+        height: 30px;
+        border: none;
+        padding-left: 5px;
+        border-radius: 5px;
+        background-color: transparent;
+        color: $gray3;
+        transition: all 300ms;
+    }
+    
+    input[type="button"],
+    input[type="submit"]{
+        height: 30px;
+        cursor:pointer;
+        font-size: 16px;
+        background: transparent;
+        border: none;
+        border-left: 1px solid $gray3;
+        color: #555;
+        padding-left: 6px;
+    }
+    
+    input[type="text"]:focus{
+        color: #555;
+    }
+    
+    .aside-box{
+        width: 85%;
+        height: 240px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-top: 2px;
+        background: $white;
+        box-shadow: 0 0 1px $shadow3d, 0 3px 7px $shadow3d, 0 1px $white inset, 0 -3px 2px $shadow3d inset;
+    }   /* Efecto 3D con sombras */
+
+    #login{
+        input[type="email"],
+        input[type="password"]{
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 80%;
+            height: 30px;
+            border: 1px solid $gray3;
+            box-shadow: 1px 1px 1px $gray3 inset;
+            border-radius: 5px;
+            padding-left: 30px;
+        }
+        
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            color: #555;
+            box-shadow: 1px 1px 1px $gray1 inset;
+        }
+        
+        #user,
+        #password {
+            display: block;
+            position: absolute;
+            margin-top: 6px;
+            margin-left: 18px;
+            text-align: center;
+            height: 30px;
+        }
+        
+        #password {
+            margin-left: 22px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        button {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            height: 35px;
+            color: $white;
+            background-image: linear-gradient(to bottom, $blue1 0%, $blue2 100%);
+            border: 1px solid $blue3;
+            border-radius: 0;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: "TrebuchetMS";
+            font-weight: lighter;
+            margin: 20px 0 20px 17px;
+            transition: all 300ms; 
+        }
+        
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover,
+        button:hover {
+            background-image: linear-gradient(to top, $blue1 0%, $blue2 100%);
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+            color: $shadow;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: $blue2;
+        }
+    }
+
+    #social {
+        height: 190px;
+        
+        a {
+            display: block;
+            text-decoration: none;
+            color: $shadow;
+            margin: 10px 0 20px 20px;
+            font-size: 30px;
+        }
+        
+        .overlay{
+            display: block;
+            position: absolute;
+            height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 0 0 1px $gray3;
+            border: 3px solid $white;
+            box-shadow: 0 0 4px $gray3;
+            background: #fefefe;
+            padding: 5px;
+            margin-left: 70px;
+            margin-top: -53px;
+            cursor: pointer;
+            transform: translateX(-80%);
+            opacity: 0;
+            transition: all 400ms;
+        }
+        
+        div:hover .overlay{
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+}
+
+
