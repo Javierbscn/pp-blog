@@ -1,5 +1,3 @@
-@import 'variables';
-// Footer
 #footer {
     width: 100%;
     height: 470px;
@@ -31,7 +29,7 @@
     
     h5{
         display: block;
-        background: url(../img/pxgray.png), $white;
+        background: img('pxgray.png'), $white;
         height: 50px;
         letter-spacing: 2px;
         text-align: center;

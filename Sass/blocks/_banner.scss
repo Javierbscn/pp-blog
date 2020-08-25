@@ -1,9 +1,7 @@
-@import 'variables';
-// BANNER
 #banner{
     width: 95.5%;
     height: 100px;
-    background: url(../img/bakbaner.png);
+    background: img('bakbaner.png');
     background-position: -250px -200px;
     border: 10px solid $white;
     border-radius: 2px;

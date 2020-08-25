@@ -1,10 +1,17 @@
-@use 'general';
-@use 'variables';
-@use 'header';
-@use 'banner';
-@use 'cards';
-@use 'content';
-@use 'sidebar';
-@use 'footer';
-@use 'animations';
-@use 'responsive';
+// base
+@import 'config/variables';
+@import 'config/normalize';
+@import 'config/fonts';
+@import 'config/base';
+
+// blocks
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/cards';
+@import 'blocks/content';
+@import 'blocks/sidebar';
+@import 'blocks/footer';
+
+// details
+@import 'details/animations';
+@import 'details/responsive';

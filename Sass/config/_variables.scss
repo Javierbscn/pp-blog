@@ -1,0 +1,28 @@
+// variables
+:root{
+--blue1: #37bcf9;
+--blue2: #0370b9;
+--blue3: #00538c;
+--white: #fff;
+--black: #000;
+--gray1: gray;
+--gray2: #ddd;
+--gray3: #ccc;
+--shadow: #393d3f;
+--shadow3d: rgba(0, 0, 0, .3);
+}
+
+$blue1: var(--blue1);
+$blue2: var(--blue2);
+$blue3: var(--blue3);
+$white: var(--white);
+$black: var(--black);
+$gray1: var(--gray1);
+$gray2: var(--gray2);
+$gray3: var(--gray3);
+$shadow: var(--shadow);
+$shadow3d: var(--shadow3d);
+
+@function img($file) {
+    @return url('../img/'+ $file);
+}

@@ -1,31 +1,50 @@
+:root {
+  --blue1: #37bcf9;
+  --blue2: #0370b9;
+  --blue3: #00538c;
+  --white: #fff;
+  --black: #000;
+  --gray1: gray;
+  --gray2: #ddd;
+  --gray3: #ccc;
+  --shadow: #393d3f;
+  --shadow3d: rgba(0, 0, 0, .3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "TrebuchetMS";
-  src: url("fonts/TrebuchetMS.ttf");
+  src: url("../Sass/config/fonts/TrebuchetMS.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "BebasNeue";
-  src: url("fonts/BebasNeue.otf");
+  src: url("../Sass/config/fonts/BebasNeue.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "WebSymbolsRegular";
-  src: url("fonts/websymbols-regular-webfont.eot");
-  src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/websymbols-regular-webfont.ttf") format("truetype"), url("fonts/websymbols-regular-webfont.woff") format("woff"), url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+  src: url("../Sass/config/fonts/websymbols-regular-webfont.eot");
+  src: url("../Sass/config/fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Sass/config/fonts/websymbols-regular-webfont.ttf") format("truetype"), url("../Sass/config/fonts/websymbols-regular-webfont.woff") format("woff"), url("../Sass/config/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  text-decoration: none;
-}
-
 body {
-  background: url(../img/pattern.png);
+  background: url("../img/pattern.png");
 }
 body .wrap {
   width: 96%;
@@ -46,8 +65,8 @@ aside h3,
   width: auto;
   height: 45px;
   line-height: 49px;
-  background: url(../img/pxgray.png);
-  box-shadow: 0 1px 0 #393d3f, 1px 2px 0 #393d3f, 2px 3px 0 #393d3f, 3px 4px 0 #393d3f;
+  background: url("../img/pxgray.png");
+  box-shadow: 0 1px 0 var(--shadow), 1px 2px 0 var(--shadow), 2px 3px 0 var(--shadow), 3px 4px 0 var(--shadow);
   font-size: 30px;
   font-family: "BebasNeue";
   font-weight: normal;
@@ -59,14 +78,14 @@ aside h3,
 #header {
   width: 100%;
   height: 70px;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
   font-family: "BebasNeue";
 }
 #header #logotype {
   float: left;
   width: 200px;
-  background-color: #37bcf9;
+  background-color: var(--blue1);
   text-align: center;
   margin-top: 8px;
   margin-left: 20px;
@@ -77,8 +96,8 @@ aside h3,
 }
 #header #logotype:hover {
   border-radius: 2px;
-  color: #000;
-  background-color: #ccc;
+  color: var(--black);
+  background-color: var(--gray3);
 }
 #header #logotype .gear {
   display: block;
@@ -119,37 +138,37 @@ aside h3,
 }
 #header #menu ul li a {
   display: block;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   transition: all 200ms;
 }
 #header #menu ul li a:hover {
-  color: #37bcf9;
+  color: var(--blue1);
   transform: scale(1.2, 1.2);
 }
 
 #banner {
   width: 95.5%;
   height: 100px;
-  background: url(../img/bakbaner.png);
+  background: url("../img/bakbaner.png");
   background-position: -250px -200px;
-  border: 10px solid #fff;
+  border: 10px solid var(--white);
   border-radius: 2px;
-  box-shadow: 0 0 2px gray;
+  box-shadow: 0 0 2px var(--gray1);
   margin: 20px auto;
   overflow: hidden;
   animation: backBanner 10s linear;
 }
 #banner h1 {
   display: block;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   line-height: 110px;
   font-family: "BebasNeue";
   font-weight: normal;
   font-size: 45px;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 1px #000;
+  text-shadow: 2px 2px 1px var(--black);
   animation: showText 10s linear;
 }
 
@@ -161,15 +180,15 @@ aside h3,
   float: left;
   width: 13em;
   height: 19em;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 2px #ddd;
-  background: #fff;
+  border: 1px solid var(--gray3);
+  box-shadow: 1px 1px 2px var(--gray2);
+  background: var(--white);
   overflow: hidden;
   margin: 2em 0.7em;
   transition: all 300ms;
 }
 #cards .card:hover {
-  background: #000;
+  background: var(--black);
 }
 #cards .card:last-child {
   margin-right: 0;
@@ -185,7 +204,7 @@ aside h3,
 }
 #cards .card:hover .icon {
   font-size: 70px;
-  color: #37bcf9;
+  color: var(--blue1);
   animation: showIcon 300ms linear;
 }
 #cards .card .category {
@@ -194,25 +213,25 @@ aside h3,
   font-size: 21px;
   font-weight: bold;
   font-family: "TrebuchetMS";
-  color: #00538c;
+  color: var(--blue3);
   text-align: center;
-  transition: all 300ms;
+  transition: all 0.3s;
 }
 #cards .card:hover .category {
-  color: #fff;
+  color: var(--white);
   animation: showCategory 400ms linear;
 }
 #cards .card .description {
   padding: 5px;
   font-family: "TrebuchetMS";
-  color: #0370b9;
+  color: var(--blue2);
   text-align: center;
   font-size: 14px;
-  transition: all 300ms;
+  transition: all 0.3s;
 }
 #cards .card:hover .description {
   animation: showDescription 400ms linear;
-  color: #fff;
+  color: var(--white);
 }
 
 #articles {
@@ -232,12 +251,12 @@ aside h3,
   width: 98%;
   height: auto;
   margin: 40px auto;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray3);
   padding: 10px;
   font-family: "TrebuchetMS";
-  background: #fff;
-  color: #000;
-  box-shadow: 1px 1px 2px #ddd;
+  background: var(--white);
+  color: var(--black);
+  box-shadow: 1px 1px 2px var(--gray2);
 }
 #articles article h4 {
   display: block;
@@ -246,15 +265,15 @@ aside h3,
 }
 #articles article h4 a {
   text-decoration: none;
-  color: #00538c;
+  color: var(--blue3);
 }
 #articles article h4 a:hover {
   text-decoration: underline;
 }
 #articles article .data {
   float: right;
-  background: #393d3f;
-  color: #fff;
+  background: var(--shadow);
+  color: var(--white);
   height: 30px;
   line-height: 30px;
   font-size: 13px;
@@ -273,8 +292,8 @@ aside h3,
   text-align: center;
   line-height: 100px;
   margin-top: 60px;
-  box-shadow: 0 0 2px gray;
-  background-color: #fff;
+  box-shadow: 0 0 2px var(--gray1);
+  background-color: var(--white);
   transition: all 1s;
 }
 #articles #blog a {
@@ -283,19 +302,19 @@ aside h3,
   font-size: 40px;
   letter-spacing: 3px;
   text-decoration: none;
-  color: #00538c;
+  color: var(--blue3);
   transition: all 1s;
 }
 #articles #blog:hover {
-  border: 10px solid #37bcf9;
+  border: 10px solid var(--blue1);
   border-radius: 240px;
-  box-shadow: 0 0 10px gray;
-  background-color: #393d3f;
+  box-shadow: 0 0 10px var(--gray1);
+  background-color: var(--shadow);
   animation: blink 5s infinite linear;
 }
 #articles #blog:hover a {
-  color: #fff;
-  text-shadow: 1px 1px 1px #000, 1px 2px 1px #000, 1px 3px 1px #000, 1px 4px 1px #000, 1px 5px 1px #000, 1px 6px 1px #000;
+  color: var(--white);
+  text-shadow: 1px 1px 1px var(--black), 1px 2px 1px var(--black), 1px 3px 1px var(--black), 1px 4px 1px var(--black), 1px 5px 1px var(--black), 1px 6px 1px var(--black);
 }
 
 #lateral {
@@ -304,7 +323,6 @@ aside h3,
   font-family: "TrebuchetMS";
   float: right;
   margin: 1.9em;
-  /* Efecto 3D con sombras */
 }
 #lateral h3:first-child {
   margin-top: 0;
@@ -313,10 +331,10 @@ aside h3,
   width: 90%;
   height: 30px;
   margin: 10px auto;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 4px #ccc inset;
+  border: 1px solid var(--gray3);
+  box-shadow: 1px 1px 4px var(--gray3) inset;
 }
 #lateral input[type=text] {
   width: 85%;
@@ -325,7 +343,7 @@ aside h3,
   padding-left: 5px;
   border-radius: 5px;
   background-color: transparent;
-  color: #ccc;
+  color: var(--gray3);
   transition: all 300ms;
 }
 #lateral input[type=button],
@@ -335,7 +353,7 @@ aside h3,
   font-size: 16px;
   background: transparent;
   border: none;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid var(--gray3);
   color: #555;
   padding-left: 6px;
 }
@@ -348,8 +366,8 @@ aside h3,
   margin: 0 auto;
   margin-top: 20px;
   padding-top: 2px;
-  background: #fff;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), 0 1px #fff inset, 0 -3px 2px rgba(0, 0, 0, 0.3) inset;
+  background: var(--white);
+  box-shadow: 0 0 1px var(--shadow3d), 0 3px 7px var(--shadow3d), 0 1px var(--white) inset, 0 -3px 2px var(--shadow3d) inset;
 }
 #lateral #login input[type=email],
 #lateral #login input[type=password] {
@@ -358,15 +376,15 @@ aside h3,
   margin-top: 20px;
   width: 80%;
   height: 30px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px #ccc inset;
+  border: 1px solid var(--gray3);
+  box-shadow: 1px 1px 1px var(--gray3) inset;
   border-radius: 5px;
   padding-left: 30px;
 }
 #lateral #login input[type=email]:focus,
 #lateral #login input[type=password]:focus {
   color: #555;
-  box-shadow: 1px 1px 1px gray inset;
+  box-shadow: 1px 1px 1px var(--gray1) inset;
 }
 #lateral #login #user,
 #lateral #login #password {
@@ -390,9 +408,9 @@ aside h3,
   text-align: center;
   width: 100px;
   height: 35px;
-  color: #fff;
-  background-image: linear-gradient(to bottom, #37bcf9 0%, #0370b9 100%);
-  border: 1px solid #00538c;
+  color: var(--white);
+  background-image: linear-gradient(to bottom, var(--blue1) 0%, var(--blue2) 100%);
+  border: 1px solid var(--blue3);
   border-radius: 0;
   cursor: pointer;
   font-size: 15px;
@@ -405,18 +423,18 @@ aside h3,
 #lateral #login input[type=reset]:hover,
 #lateral #login input[type=button]:hover,
 #lateral #login button:hover {
-  background-image: linear-gradient(to top, #37bcf9 0%, #0370b9 100%);
+  background-image: linear-gradient(to top, var(--blue1) 0%, var(--blue2) 100%);
 }
 #lateral #login a {
   display: block;
   text-decoration: none;
   margin-left: 18px;
   font-size: 14px;
-  color: #393d3f;
+  color: var(--shadow);
 }
 #lateral #login a:hover {
   text-decoration: underline;
-  color: #0370b9;
+  color: var(--blue2);
 }
 #lateral #social {
   height: 190px;
@@ -424,7 +442,7 @@ aside h3,
 #lateral #social a {
   display: block;
   text-decoration: none;
-  color: #393d3f;
+  color: var(--shadow);
   margin: 10px 0 20px 20px;
   font-size: 30px;
 }
@@ -435,9 +453,9 @@ aside h3,
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  text-shadow: 0 0 1px #ccc;
-  border: 3px solid #fff;
-  box-shadow: 0 0 4px #ccc;
+  text-shadow: 0 0 1px var(--gray3);
+  border: 3px solid var(--white);
+  box-shadow: 0 0 4px var(--gray3);
   background: #fefefe;
   padding: 5px;
   margin-left: 70px;
@@ -455,8 +473,8 @@ aside h3,
 #footer {
   width: 100%;
   height: 470px;
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
   overflow: hidden;
 }
 #footer .wrap > div {
@@ -465,29 +483,29 @@ aside h3,
   height: 370px;
   margin: 40px;
   text-align: center;
-  color: #fff;
+  color: var(--white);
   font-family: "TrebuchetMS";
 }
 #footer a {
   text-decoration: none;
-  color: #37bcf9;
+  color: var(--blue1);
   transition: all 300ms;
 }
 #footer a:hover {
   padding-left: 40px;
-  color: #fff;
+  color: var(--white);
   width: 100%;
 }
 #footer h5 {
   display: block;
-  background: url(../img/pxgray.png), #fff;
+  background: url("../img/pxgray.png"), var(--white);
   height: 50px;
   letter-spacing: 2px;
   text-align: center;
   font-family: "BebasNeue";
   font-size: 40px;
   line-height: 55px;
-  color: #000;
+  color: var(--black);
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -499,7 +517,7 @@ aside h3,
 #footer ul li {
   margin-top: 10px;
   padding: 5px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--gray3);
 }
 #footer ul li a {
   display: block;
@@ -510,8 +528,8 @@ aside h3,
   height: 250px;
   margin-top: 10px;
   border-radius: 5px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 5px gray;
+  border: 5px solid var(--white);
+  box-shadow: 0 0 5px var(--gray1);
 }
 #footer img {
   margin-bottom: 15px;
@@ -572,8 +590,8 @@ aside h3,
   }
   100% {
     transform: translateX(0%) scale(1, 1);
-    text-shadow: 2px 2px 1px #000;
-    color: #fff;
+    text-shadow: 2px 2px 1px var(--black);
+    color: var(--white);
     opacity: 1;
   }
 }
@@ -588,17 +606,17 @@ aside h3,
 @keyframes showCategory {
   from {
     transform: translateY(-300%);
-    color: #000;
+    color: var(--black);
   }
   to {
     transform: translateY(0%);
-    color: #fff;
+    color: var(--white);
   }
 }
 @keyframes showDescription {
   from {
     transform: translateX(-300%);
-    color: #000;
+    color: var(--black);
   }
   to {
     transform: translateX(0%);
@@ -606,7 +624,7 @@ aside h3,
 }
 @keyframes blink {
   0% {
-    border: 10px solid #37bcf9;
+    border: 10px solid var(--blue1);
   }
   25% {
     border: 10px solid lime;
@@ -615,10 +633,10 @@ aside h3,
     border: 10px solid yellow;
   }
   75% {
-    border: 10px solid #fff;
+    border: 10px solid var(--white);
   }
   100% {
-    border: 10px solid #37bcf9;
+    border: 10px solid var(--blue1);
   }
 }
 @media (max-width: 1250px) {
@@ -914,7 +932,7 @@ aside h3,
     padding-right: 0;
   }
   #header #menu a:hover {
-    color: #37bcf9;
+    color: var(--blue1);
     transform: none;
   }
 
