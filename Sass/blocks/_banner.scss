@@ -1,25 +1,25 @@
-#banner{
-    width: 95.5%;
-    height: 100px;
-    background: img('bakbaner.png');
-    background-position: -250px -200px;
-    border: 10px solid $white;
-    border-radius: 2px;
-    box-shadow: 0 0 2px $gray1;
-    margin: 20px auto;
-    overflow: hidden;
-    animation: backBanner 10s linear;
+#banner {
+    width              : 95.5%;
+    height             : 100px;
+    background         : img('backbaner.jpg');
+    background-position: -400px -300px;
+    border             : 10px solid $white;
+    border-radius      : 2px;
+    box-shadow         : 0 0 2px $gray1;
+    margin             : 20px auto;
+    overflow           : hidden;
+    animation          : backBanner 10s linear;
 
-    h1{
-        display: block;
-        color: $white;
-        text-align: center;
-        line-height: 110px;
-        font-family: "BebasNeue";
-        font-weight: normal;
-        font-size: 45px;
+    h1 {
+        display       : block;
+        color         : $white;
+        text-align    : center;
+        line-height   : 110px;
+        font-family   : "BebasNeue";
+        font-weight   : normal;
+        font-size     : 45px;
         letter-spacing: 2px;
-        text-shadow: 2px 2px 1px $black;
-        animation: showText 10s linear;
+        text-shadow   : 2px 2px 1px $black;
+        animation     : showText 10s linear;
     }
 }

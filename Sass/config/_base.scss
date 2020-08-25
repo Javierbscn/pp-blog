@@ -1,33 +1,36 @@
-body{
+body {
     background: img('pattern.png');
-    .wrap{
-        width: 96%;
+
+    .wrap {
+        width : 96%;
         margin: 0 auto;
     }
-    
-    .clearfix{
+
+    .clearfix {
         float: none;
         clear: both;
     }
-    .gear, 
-    .icon{
+
+    .gear,
+    .icon {
         font-family: "WebSymbolsRegular";
     }
 }
 
 // Shared Styles
 aside h3,
-#articles h3{
-    display: block;
-    width: auto;
-    height: 45px;
-    line-height: 49px;
-    background: img('pxgray.png');
-    box-shadow: 0 1px 0 $shadow, 1px 2px 0 $shadow, 2px 3px 0 $shadow, 3px 4px 0 $shadow;
-    font-size: 30px;
-    font-family: "BebasNeue";
-    font-weight: normal;
+#articles h3 {
+    display       : block;
+    width         : auto;
+    height        : 45px;
+    line-height   : 49px;
+    color         : $black;
+    background    : img('pxgray.png');
+    box-shadow    : 0 1px 0 $shadow, 1px 2px 0 $shadow, 2px 3px 0 $shadow, 3px 4px 0 $shadow;
+    font-size     : 30px;
+    font-family   : "BebasNeue";
+    font-weight   : normal;
     letter-spacing: 2px;
-    padding-left: 30px;
-    margin: 15px 0;
+    padding-left  : 30px;
+    margin        : 15px 0;
 }

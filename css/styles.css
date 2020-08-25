@@ -1,13 +1,13 @@
 :root {
-  --blue1: #37bcf9;
-  --blue2: #0370b9;
-  --blue3: #00538c;
+  --blue1: #37b2f9;
+  --blue2: #0b71b6;
+  --blue3: #01418a;
   --white: #fff;
-  --black: #000;
+  --black: #333;
   --gray1: gray;
   --gray2: #ddd;
   --gray3: #ccc;
-  --shadow: #393d3f;
+  --shadow: #404344;
   --shadow3d: rgba(0, 0, 0, .3);
 }
 
@@ -65,6 +65,7 @@ aside h3,
   width: auto;
   height: 45px;
   line-height: 49px;
+  color: var(--black);
   background: url("../img/pxgray.png");
   box-shadow: 0 1px 0 var(--shadow), 1px 2px 0 var(--shadow), 2px 3px 0 var(--shadow), 3px 4px 0 var(--shadow);
   font-size: 30px;
@@ -139,7 +140,6 @@ aside h3,
 #header #menu ul li a {
   display: block;
   color: var(--white);
-  text-decoration: none;
   transition: all 200ms;
 }
 #header #menu ul li a:hover {
@@ -150,8 +150,8 @@ aside h3,
 #banner {
   width: 95.5%;
   height: 100px;
-  background: url("../img/bakbaner.png");
-  background-position: -250px -200px;
+  background: url("../img/backbaner.jpg");
+  background-position: -400px -300px;
   border: 10px solid var(--white);
   border-radius: 2px;
   box-shadow: 0 0 2px var(--gray1);
@@ -173,18 +173,19 @@ aside h3,
 }
 
 #cards {
-  width: 96%;
+  width: 90%;
   margin: 0 auto;
+  transform: translateX(3%);
 }
 #cards .card {
   float: left;
-  width: 13em;
+  width: 12.4em;
   height: 19em;
   border: 1px solid var(--gray3);
   box-shadow: 1px 1px 2px var(--gray2);
   background: var(--white);
   overflow: hidden;
-  margin: 2em 0.7em;
+  margin: 2em 0.5em;
   transition: all 300ms;
 }
 #cards .card:hover {
@@ -197,6 +198,7 @@ aside h3,
   display: block;
   width: 100%;
   height: 130px;
+  color: var(--black);
   font-size: 50px;
   line-height: 130px;
   text-align: center;
@@ -222,7 +224,7 @@ aside h3,
   animation: showCategory 400ms linear;
 }
 #cards .card .description {
-  padding: 5px;
+  padding: 7px;
   font-family: "TrebuchetMS";
   color: var(--blue2);
   text-align: center;
@@ -264,7 +266,6 @@ aside h3,
   margin: 3px;
 }
 #articles article h4 a {
-  text-decoration: none;
   color: var(--blue3);
 }
 #articles article h4 a:hover {
@@ -301,7 +302,6 @@ aside h3,
   font-family: "BebasNeue";
   font-size: 40px;
   letter-spacing: 3px;
-  text-decoration: none;
   color: var(--blue3);
   transition: all 1s;
 }
@@ -317,17 +317,18 @@ aside h3,
   text-shadow: 1px 1px 1px var(--black), 1px 2px 1px var(--black), 1px 3px 1px var(--black), 1px 4px 1px var(--black), 1px 5px 1px var(--black), 1px 6px 1px var(--black);
 }
 
-#lateral {
+#sidebar {
   width: 18.4em;
   min-height: 1200px;
+  color: var(--black);
   font-family: "TrebuchetMS";
   float: right;
   margin: 1.9em;
 }
-#lateral h3:first-child {
+#sidebar h3:first-child {
   margin-top: 0;
 }
-#lateral #search {
+#sidebar #search {
   width: 90%;
   height: 30px;
   margin: 10px auto;
@@ -336,7 +337,7 @@ aside h3,
   border: 1px solid var(--gray3);
   box-shadow: 1px 1px 4px var(--gray3) inset;
 }
-#lateral input[type=text] {
+#sidebar input[type=text] {
   width: 85%;
   height: 30px;
   border: none;
@@ -346,8 +347,8 @@ aside h3,
   color: var(--gray3);
   transition: all 300ms;
 }
-#lateral input[type=button],
-#lateral input[type=submit] {
+#sidebar input[type=button],
+#sidebar input[type=submit] {
   height: 30px;
   cursor: pointer;
   font-size: 16px;
@@ -357,10 +358,10 @@ aside h3,
   color: #555;
   padding-left: 6px;
 }
-#lateral input[type=text]:focus {
+#sidebar input[type=text]:focus {
   color: #555;
 }
-#lateral .aside-box {
+#sidebar .aside-box {
   width: 85%;
   height: 240px;
   margin: 0 auto;
@@ -369,8 +370,8 @@ aside h3,
   background: var(--white);
   box-shadow: 0 0 1px var(--shadow3d), 0 3px 7px var(--shadow3d), 0 1px var(--white) inset, 0 -3px 2px var(--shadow3d) inset;
 }
-#lateral #login input[type=email],
-#lateral #login input[type=password] {
+#sidebar #login input[type=email],
+#sidebar #login input[type=password] {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -381,13 +382,13 @@ aside h3,
   border-radius: 5px;
   padding-left: 30px;
 }
-#lateral #login input[type=email]:focus,
-#lateral #login input[type=password]:focus {
+#sidebar #login input[type=email]:focus,
+#sidebar #login input[type=password]:focus {
   color: #555;
   box-shadow: 1px 1px 1px var(--gray1) inset;
 }
-#lateral #login #user,
-#lateral #login #password {
+#sidebar #login #user,
+#sidebar #login #password {
   display: block;
   position: absolute;
   margin-top: 6px;
@@ -395,15 +396,15 @@ aside h3,
   text-align: center;
   height: 30px;
 }
-#lateral #login #password {
+#sidebar #login #password {
   margin-left: 22px;
   margin-top: 25px;
   font-size: 20px;
 }
-#lateral #login input[type=submit],
-#lateral #login input[type=reset],
-#lateral #login input[type=button],
-#lateral #login button {
+#sidebar #login input[type=submit],
+#sidebar #login input[type=reset],
+#sidebar #login input[type=button],
+#sidebar #login button {
   display: inline-block;
   text-align: center;
   width: 100px;
@@ -419,34 +420,32 @@ aside h3,
   margin: 20px 0 20px 17px;
   transition: all 300ms;
 }
-#lateral #login input[type=submit]:hover,
-#lateral #login input[type=reset]:hover,
-#lateral #login input[type=button]:hover,
-#lateral #login button:hover {
+#sidebar #login input[type=submit]:hover,
+#sidebar #login input[type=reset]:hover,
+#sidebar #login input[type=button]:hover,
+#sidebar #login button:hover {
   background-image: linear-gradient(to top, var(--blue1) 0%, var(--blue2) 100%);
 }
-#lateral #login a {
+#sidebar #login a {
   display: block;
-  text-decoration: none;
   margin-left: 18px;
   font-size: 14px;
   color: var(--shadow);
 }
-#lateral #login a:hover {
+#sidebar #login a:hover {
   text-decoration: underline;
   color: var(--blue2);
 }
-#lateral #social {
+#sidebar #social {
   height: 190px;
 }
-#lateral #social a {
+#sidebar #social a {
   display: block;
-  text-decoration: none;
   color: var(--shadow);
   margin: 10px 0 20px 20px;
   font-size: 30px;
 }
-#lateral #social .overlay {
+#sidebar #social .overlay {
   display: block;
   position: absolute;
   height: 20px;
@@ -465,14 +464,14 @@ aside h3,
   opacity: 0;
   transition: all 400ms;
 }
-#lateral #social div:hover .overlay {
+#sidebar #social div:hover .overlay {
   opacity: 1;
   transform: translateX(0%);
 }
 
 #footer {
   width: 100%;
-  height: 470px;
+  height: 430px;
   background: var(--black);
   color: var(--white);
   overflow: hidden;
@@ -480,14 +479,13 @@ aside h3,
 #footer .wrap > div {
   float: left;
   width: 320px;
-  height: 370px;
+  height: 330px;
   margin: 40px;
   text-align: center;
   color: var(--white);
   font-family: "TrebuchetMS";
 }
 #footer a {
-  text-decoration: none;
   color: var(--blue1);
   transition: all 300ms;
 }
@@ -525,7 +523,6 @@ aside h3,
 }
 #footer iframe {
   width: 100%;
-  height: 250px;
   margin-top: 10px;
   border-radius: 5px;
   border: 5px solid var(--white);
@@ -570,7 +567,7 @@ aside h3,
     background-position: 0 0;
   }
   100% {
-    background-position: -250px -200px;
+    background-position: -400px -300px;
   }
 }
 @keyframes showText {
@@ -650,6 +647,9 @@ aside h3,
     text-align: center;
   }
 
+  #cards {
+    transform: translateX(2%);
+  }
   #cards .card {
     width: 17%;
     margin: 1.4%;
@@ -689,6 +689,10 @@ aside h3,
     line-height: 110px;
   }
 
+  #cards {
+    transform: translateX(1%);
+  }
+
   #cards .card .icon {
     font-size: 2em;
   }
@@ -700,6 +704,10 @@ aside h3,
   }
 }
 @media (max-width: 1080px) {
+  #cards {
+    transform: translateX(0);
+  }
+
   #articles {
     width: calc(65% - 20px);
   }
@@ -731,36 +739,36 @@ aside h3,
     padding-left: 0;
   }
 
-  #lateral {
+  #sidebar {
     width: 30%;
   }
-  #lateral input[type=text] {
+  #sidebar input[type=text] {
     width: 80%;
   }
-  #lateral input[type=button],
-#lateral input[type=submit] {
+  #sidebar input[type=button],
+#sidebar input[type=submit] {
     padding: 0 5px 0 5px;
   }
 
-  #lateral #login input[type=reset] {
+  #sidebar #login input[type=reset] {
     display: none;
   }
-  #lateral #login input[type=submit],
-#lateral #login input[type=button],
-#lateral #login button {
+  #sidebar #login input[type=submit],
+#sidebar #login input[type=button],
+#sidebar #login button {
     display: block;
     margin: 10px auto;
   }
-  #lateral #login a {
+  #sidebar #login a {
     margin: 10px auto;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
   }
-  #lateral #login #user {
+  #sidebar #login #user {
     margin-left: 12px;
   }
-  #lateral #login #password {
+  #sidebar #login #password {
     margin-left: 15px;
   }
 
@@ -798,7 +806,7 @@ aside h3,
     height: 18em;
   }
 
-  #lateral input[type=text] {
+  #sidebar input[type=text] {
     width: 73%;
   }
 
@@ -842,7 +850,7 @@ aside h3,
   }
 
   #articles,
-#lateral {
+#sidebar {
     float: none;
     width: 100%;
     margin: 10px auto;
@@ -850,7 +858,7 @@ aside h3,
     margin-top: 30px;
   }
 
-  #lateral h3,
+  #sidebar h3,
 #articles h3,
 #articles article {
     margin: 1em;
@@ -863,18 +871,18 @@ aside h3,
     display: inline;
   }
 
-  #lateral input[type=text] {
+  #sidebar input[type=text] {
     width: 90%;
   }
-  #lateral #login input[type=email],
-#lateral #login input[type=password] {
+  #sidebar #login input[type=email],
+#sidebar #login input[type=password] {
     width: 90%;
   }
-  #lateral #login #user,
-#lateral #login #password {
+  #sidebar #login #user,
+#sidebar #login #password {
     margin-left: 1.1em;
   }
-  #lateral #login a {
+  #sidebar #login a {
     display: inline-block;
     padding: 1em 0 0 6.25em;
   }
@@ -891,7 +899,7 @@ aside h3,
 
   #footer .wrap > div {
     width: calc(100% - 4em);
-    margin: 0 auto;
+    margin: 1.5em auto;
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -901,7 +909,7 @@ aside h3,
     margin-right: 4.5em;
   }
 
-  #lateral #login a {
+  #sidebar #login a {
     display: inline-block;
     padding: 1em 0 0 4.2em;
   }
@@ -950,14 +958,14 @@ aside h3,
     width: 85%;
   }
 
-  #lateral input[type=text] {
+  #sidebar input[type=text] {
     width: 85%;
   }
-  #lateral #login input[type=email],
-#lateral #login input[type=password] {
+  #sidebar #login input[type=email],
+#sidebar #login input[type=password] {
     width: 87%;
   }
-  #lateral #login a {
+  #sidebar #login a {
     display: inline-block;
     padding: 1em 0 0 1.8em;
   }
@@ -988,7 +996,7 @@ aside h3,
   }
 }
 @media (max-width: 400px) {
-  #lateral #login a {
+  #sidebar #login a {
     display: inline-block;
     padding: 1em 0 0 0.7em;
   }

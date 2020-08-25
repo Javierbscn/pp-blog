@@ -1,93 +1,91 @@
 #articles {
-    width: 49em;
-    float: left;
+    width      : 49em;
+    float      : left;
     margin-left: 50px;
-    
-    h3{
-        height: 75px;
-        line-height: 75px;
-        text-align: center;
-        font-size: 40px;
-        font-family: "BebasNeue";
-        margin: 20px 0 15px 0;
-    }
-    
-    article {
-        width: 98%;
-        height: auto;
-        margin: 40px auto;
-        border: 1px solid $gray3;
-        padding: 10px;
-        font-family: "TrebuchetMS";
-        background: $white;
-        color: $black;
-        box-shadow: 1px 1px 2px $gray2;
 
-        h4{
-            display: block;
+    h3 {
+        height     : 75px;
+        line-height: 75px;
+        text-align : center;
+        font-size  : 40px;
+        font-family: "BebasNeue";
+        margin     : 20px 0 15px 0;
+    }
+
+    article {
+        width      : 98%;
+        height     : auto;
+        margin     : 40px auto;
+        border     : 1px solid $gray3;
+        padding    : 10px;
+        font-family: "TrebuchetMS";
+        background : $white;
+        color      : $black;
+        box-shadow : 1px 1px 2px $gray2;
+
+        h4 {
+            display  : block;
             font-size: 23px;
-            margin: 3px;
+            margin   : 3px;
         }
-        
-        h4 a{
-            text-decoration: none;
-            color: $blue3;
+
+        h4 a {
+            color          : $blue3;
         }
-        
+
         h4 a:hover {
             text-decoration: underline;
         }
-        
+
         .data {
-            float: right;
-            background: $shadow;
-            color: $white;
-            height: 30px;
-            line-height: 30px;
-            font-size: 13px;
-            margin: -10px;
-            padding: 4px;
+            float        : right;
+            background   : $shadow;
+            color        : $white;
+            height       : 30px;
+            line-height  : 30px;
+            font-size    : 13px;
+            margin       : -10px;
+            padding      : 4px;
             border-radius: 0 0 0 5px;
         }
-        
+
         .data span {
             margin: 6px;
         }
-        
+
         p {
             margin: 10px 0 10px 0;
         }
     }
 
     #blog {
-        height: 100px;
-        text-align: center;
-        line-height: 100px;
-        margin-top: 60px;
-        box-shadow: 0 0 2px $gray1;
+        height          : 100px;
+        text-align      : center;
+        line-height     : 100px;
+        margin-top      : 60px;
+        box-shadow      : 0 0 2px $gray1;
         background-color: $white;
-        transition: all 1s;
-        
+        transition      : all 1s;
+
         a {
-            display: block;
-            font-family: "BebasNeue";
-            font-size: 40px;
-            letter-spacing: 3px;
-            text-decoration: none;
-            color: $blue3;
-            transition: all 1s;
+            display        : block;
+            font-family    : "BebasNeue";
+            font-size      : 40px;
+            letter-spacing : 3px;
+            color          : $blue3;
+            transition     : all 1s;
         }
-        
+
         &:hover {
-            border: 10px solid $blue1;
-            border-radius: 240px;
-            box-shadow: 0 0 10px $gray1;
+            border          : 10px solid $blue1;
+            border-radius   : 240px;
+            box-shadow      : 0 0 10px $gray1;
             background-color: $shadow;
-            animation: blink 5s infinite linear;
+            animation       : blink 5s infinite linear;
         }
-        
-        &:hover a{
-            color: $white;
+
+        &:hover a {
+            color      : $white;
             text-shadow: 1px 1px 1px $black, 1px 2px 1px $black, 1px 3px 1px $black, 1px 4px 1px $black, 1px 5px 1px $black, 1px 6px 1px $black;
         }
     }

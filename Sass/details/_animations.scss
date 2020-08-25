@@ -1,108 +1,128 @@
 // Header
-@keyframes rotate-gear{
-    from{
+@keyframes rotate-gear {
+    from {
         transform: rotateZ(0deg);
     }
-    to{
+
+    to {
         transform: rotateZ(360deg);
     }
 }
-@keyframes fromBellow{
-    0%{
+
+@keyframes fromBellow {
+    0% {
         transform: translateY(0%);
     }
-    50%{
+
+    50% {
         transform: translateY(200%);
     }
-    100%{
+
+    100% {
         transform: translateY(0%);
     }
 }
+
 @keyframes fromRight {
-    from{
+    from {
         transform: translateX(200%);
     }
-    to{
+
+    to {
         transform: translateX(0%);
     }
 }
 
 // Banner
 @keyframes backBanner {
-    0%{
+    0% {
         background-position: 0 0;
     }
+
     100% {
-        background-position: -250px -200px;
+        background-position: -400px -300px;
     }
 }
+
 @keyframes showText {
-    0%{
-        transform: translateX(-600%) scale(5,5);
-        opacity: 1;
+    0% {
+        transform: translateX(-600%) scale(5, 5);
+        opacity  : 1;
     }
-    50%{
-        transform: translateX(600%) scale(5,5);
-        opacity: 1;
+
+    50% {
+        transform: translateX(600%) scale(5, 5);
+        opacity  : 1;
     }
-    75%{
-        transform: translateX(-600%) scale(5,5);
+
+    75% {
+        transform  : translateX(-600%) scale(5, 5);
         text-shadow: none;
-        color: transparent;
-        opacity: 0;
+        color      : transparent;
+        opacity    : 0;
     }
-    100%{
-        transform: translateX(0%) scale(1,1);
+
+    100% {
+        transform  : translateX(0%) scale(1, 1);
         text-shadow: 2px 2px 1px $black;
-        color: $white;
-        opacity: 1;
+        color      : $white;
+        opacity    : 1;
     }
 }
 
 // Cards
 @keyframes showIcon {
-    from{
+    from {
         transform: translateY(-200%);
     }
-    to{
+
+    to {
         transform: translateY(0%);
     }
 }
+
 @keyframes showCategory {
-    from{
+    from {
         transform: translateY(-300%);
-        color: $black;
+        color    : $black;
     }
-    to{
+
+    to {
         transform: translateY(0%);
-        color: $white;
+        color    : $white;
     }
 }
+
 @keyframes showDescription {
-    from{
+    from {
         transform: translateX(-300%);
-        color: $black;
+        color    : $black;
     }
-    to{
+
+    to {
         transform: translateX(0%);
     }
 }
 
 // Blog Button
 @keyframes blink {
-    0%{
+    0% {
         border: 10px solid $blue1;
     }
-    25%{
+
+    25% {
         border: 10px solid lime;
     }
-    50%{
+
+    50% {
         border: 10px solid yellow;
     }
-    75%{
+
+    75% {
         border: 10px solid $white;
     }
-    100%{
+
+    100% {
         border: 10px solid $blue1;
     }
 }
